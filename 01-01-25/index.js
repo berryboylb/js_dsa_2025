@@ -51,7 +51,7 @@ export function solution(nums1, m, nums2, n) {
     const newElement = nums2[i]; // Get the next element from nums2
     nums1[m + i] = newElement; // Place it in the first available zero position
 
-    // Reorder nums1 by sorting from the end (insertion logic)
+    // swapping is done here if needed when the new value if less than the previous
     let index = m + i;
     while (index > 0 && nums1[index] < nums1[index - 1]) {
       [nums1[index], nums1[index - 1]] = [nums1[index - 1], nums1[index]]; // Swap elements
