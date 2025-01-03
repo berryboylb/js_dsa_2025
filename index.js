@@ -1,3 +1,3 @@
-import { main } from "./01-02-25/index.js";
+import { main } from "./01-03-25/index.js";
 
 main()
