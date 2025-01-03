@@ -25,9 +25,7 @@ export function solution(nums) {
       set.add(nums[i]);
       count++;
       i++;
-    } else {
-      nums.splice(i, 1);
-    }
+    } else nums.splice(i, 1);
   }
 
   console.log(count, nums, set);
